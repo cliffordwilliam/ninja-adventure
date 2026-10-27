@@ -1,16 +1,18 @@
 [project]
 name = "ninja-adventure"
 version = "0.1.0"
-description = "Add your description here"
+description = "Top-down turn-based ninja game"
 readme = "README.md"
 authors = [
     { name = "Clifford William", email = "ccliffordwilliam@gmail.com" }
 ]
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.15"
+dependencies = [
+    "pygame-ce>=2.5.8",
+]
 
 [project.scripts]
-ninja-adventure = "ninja_adventure:main"
+ninja-adventure = "ninja_adventure.main:main"
 
 [build-system]
 requires = ["uv_build>=0.13.5,<0.14.0"]
